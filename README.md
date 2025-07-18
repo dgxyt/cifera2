@@ -3,7 +3,8 @@
 A short machine learning project and CLI utility using TensorFlow to generate models and predict the genres of music files.
 
 **Version:** 2.0.0  
-**Note:** When providing relative file paths, please use `.\` for compatibility.
+**Note:** When providing relative file paths, please use `.\` for compatibility.  
+**Note:** To run the CLI program, use the command `python c2.py` (python version) or `c2` (executable version).
 
 ---
 
@@ -117,19 +118,19 @@ Deletes all model and artifact files.
     "Dropout(0.2)",
     "Dense(y_onehot.shape[1], activation='softmax')"
   ]
-- **`optimizer`**
+- **`optimizer`**  
   *Default:* `"adam"`
 
-- **`loss`**
+- **`loss`**  
   *Default:* `"categorical_crossentropy"`
 
-- **`epochs`**
+- **`epochs`**  
   *Default:* `100`
 
-- **`batch_size`**
+- **`batch_size`**  
   *Default:* `32`
 
-- **`name`**
+- **`name`**  
   *Default:* `"2"`
 
 ## Included Datasets
