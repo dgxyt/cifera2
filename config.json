@@ -1,0 +1,28 @@
+{
+    "comment": "see README.txt for details",
+    "commands": {
+        "evaluate": {
+            "model_version": "2"
+        }
+    },
+    "model": {
+        "comment": "",
+        "layers": [
+            "Input(shape=(X_train.shape[1],))",
+            "Dense(256, activation='relu')",
+            "BatchNormalization()",
+            "Dropout(0.4)",
+            "Dense(128, activation='relu')",
+            "BatchNormalization()",
+            "Dropout(0.3)",
+            "Dense(64, activation='relu')",
+            "Dropout(0.2)",
+            "Dense(y_onehot.shape[1], activation='softmax')"
+        ],
+        "optimizer": "adam",
+        "loss": "categorical_crossentropy",
+        "epochs": 100,
+        "batch_size": 32,
+        "name": "2"
+    }
+}
